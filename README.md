@@ -88,27 +88,3 @@ DELETE /api/v1/users/{id}/subscriptions/{sub_id} - Удалить подписк
 
 GET /api/v1/subscriptions/top - ТОП-3 популярных подписок
 
-Структура проекта
-src/
-├── main/
-│   ├── java/
-│   │   └── com/example/userservice/
-│   │       ├── config/       # Конфигурационные классы
-│   │       ├── controller/   # REST контроллеры
-│   │       ├── dto/          # Data Transfer Objects
-│   │       ├── exception/    # Обработка ошибок
-│   │       ├── model/        # Сущности БД
-│   │       ├── repository/   # Репозитории Spring Data
-│   │       ├── service/      # Бизнес-логика
-│   │       └── Application.java
-│   └── resources/
-│       ├── application.properties
-│       └── logback-spring.xml
-├── test/                     # Тесты
-docker-compose.yml            # Конфигурация Docker
-Dockerfile                    # Сборка Docker образа
-Тестирование
-Для запуска тестов:
-
-bash
-mvn test
